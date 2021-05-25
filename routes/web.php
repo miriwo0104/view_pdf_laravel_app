@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/pdf/request', [PdfController::class, 'showRequest'])->name('pdf.show.request');
+Route::get('/pdf/redirect', [PdfController::class, 'showRedirect'])->name('pdf.show.redirect');

@@ -15,4 +15,14 @@ class PdfController extends Controller
     {
         return response()->file(storage_path('app/public/pdf/01_file.pdf'));
     }
+
+    /**
+     * リダイレクトを用いてPDFを表示する
+     *
+     * @return redirect|file_url
+     */
+    public function showRedirect()
+    {
+        return redirect(asset('pdf/01_file.pdf'));
+    }
 }
